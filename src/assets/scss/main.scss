@@ -1,0 +1,34 @@
+@import "utils/_reset";
+@import "utils/_normalize";
+@import "utils/vars";
+@import "utils/mixins";
+
+html {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 320px;
+  background: linear-gradient(to top, #ece9e6, $default-color);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}

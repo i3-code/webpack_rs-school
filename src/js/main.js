@@ -1,7 +1,7 @@
-import Create from './dom-create';
-import Image from './image';
+import Create from './components/dom-create';
+import Image from './components/image';
 
-import { getRandomInt } from './radom';
+import { getRandomInt } from './utils/radom';
 
 import { INSERT_IMAGES, TOTAL_IMAGES } from './constants';
 

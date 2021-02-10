@@ -1,4 +1,5 @@
 import Create from './dom-create';
+
 export default class Image extends Create {
   constructor(src, parent, classNames = '') {
     super('div', parent, classNames);

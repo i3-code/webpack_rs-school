@@ -5,11 +5,8 @@ import { getRandomInt } from './radom';
 
 import { INSERT_IMAGES, TOTAL_IMAGES } from './constants';
 
-
 import testImg from '../assets/images/bg-signup.png';
 import testSound from '../assets/sounds/correct.mp3';
-
-
 
 class Main {
   constructor() {
@@ -19,7 +16,7 @@ class Main {
     const thirdDiv = new Create ('div', app.node, 'content-div, thirdDiv');
 
     firstDiv.caption = new Create ('h1', firstDiv.node, 'caption', 'Webpack template');
-    firstDiv.content = new Create ('p', firstDiv.node, 'content', 'hello world!');
+    firstDiv.content = new Create ('p', firstDiv.node, 'content', 'Hello world!');
 
     secondDiv.image = new Image(testImg, secondDiv.node, 'test-image');
     secondDiv.image.node.addEventListener('click', () => new Audio(testSound).play(), false);

@@ -79,7 +79,7 @@ module.exports = {
       inject: true,
       template: `${PATHS.src}/index.html`,
       filename: './index.html',
-      favicon: `${PATHS.src}/${PATHS.assets}/icons/favicon.ico`,
+      favicon: `${PATHS.src}/favicon.ico`,
     }),
     new CopyWebpackPlugin([
       {

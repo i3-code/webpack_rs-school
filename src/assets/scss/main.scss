@@ -32,3 +32,51 @@ a {
 .hidden {
   display: none;
 }
+
+.app {
+  height: 100vh;
+  background-color: $mainFontColor;
+  color: $default-color;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-div {
+  height: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.firstDiv {
+    background-image: url('../images/bg/01.jpg');
+    flex-direction: column;
+  }
+  &.secondDiv {
+    background-image: url('../images/bg/02.jpg');
+  }
+  &.thirdDiv {
+    background-image: url('../images/bg/03.jpg');
+    justify-content: space-around;
+  }
+}
+
+.content {
+  font-family: 'Montserrat';
+}
+
+.test-image, .random-image {
+  transition: $short-transition;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.test-image {
+  width: 500px;
+}
+
+.random-image {
+  width: 160px;
+}

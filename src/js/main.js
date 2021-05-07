@@ -10,13 +10,13 @@ import testSound from '../assets/sounds/correct.mp3';
 
 class Main {
   constructor() {
-    const app = new Create ('div', document.body, 'app');
-    const firstDiv = new Create ('div', app.node, 'content-div, firstDiv');
-    const secondDiv = new Create ('div', app.node, 'content-div, secondDiv');
-    const thirdDiv = new Create ('div', app.node, 'content-div, thirdDiv');
+    const app = new Create('div', document.body, 'app');
+    const firstDiv = new Create('div', app.node, 'content-div, firstDiv');
+    const secondDiv = new Create('div', app.node, 'content-div, secondDiv');
+    const thirdDiv = new Create('div', app.node, 'content-div, thirdDiv');
 
-    firstDiv.caption = new Create ('h1', firstDiv.node, 'caption', 'Webpack template');
-    firstDiv.content = new Create ('p', firstDiv.node, 'content', 'Hello world!');
+    firstDiv.caption = new Create('h1', firstDiv.node, 'caption', 'Webpack template');
+    firstDiv.content = new Create('p', firstDiv.node, 'content', 'Hello world!');
 
     secondDiv.image = new Image(testImg, secondDiv.node, 'test-image');
     secondDiv.image.node.addEventListener('click', () => new Audio(testSound).play(), false);
